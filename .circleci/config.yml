@@ -15,10 +15,10 @@ jobs:
             pip install -r requirements.txt
       - run:
           name: Run migrations (SQLite)
-          command: python manage.py migrate
+          command: python /src/manage.py migrate
       - run:
           name: Run tests
-          command: python manage.py test
+          command: python /src/manage.py test
 
 workflows:
   version: 2
