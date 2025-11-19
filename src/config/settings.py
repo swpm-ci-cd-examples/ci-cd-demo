@@ -27,7 +27,7 @@ SECRET_KEY = 't$xz6%_fz#km9h+r!$8uq&1%qnnu#qr_5+d@1#g(a!fwc+1d)t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ "bg-travis-demo.herokuapp.com", "localhost" ]
+ALLOWED_HOSTS = [ "bg-travis-demo.herokuapp.com", "localhost", "ci-cd-demo-9b7c.onrender.com" ]
 
 
 # Application definition
