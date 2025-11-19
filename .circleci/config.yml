@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       - image: cimg/python:3.11  # CircleCI's official Python image
-    working_directory: ~/repo
+    working_directory: ~/repo/src
 
     steps:
       - checkout  # pulls your code
@@ -15,10 +15,10 @@ jobs:
             pip install -r requirements.txt
       - run:
           name: Run migrations (SQLite)
-          command: python /src/manage.py migrate
+          command: python manage.py migrate
       - run:
           name: Run tests
-          command: python /src/manage.py test
+          command: python manage.py test
 
 workflows:
   version: 2
